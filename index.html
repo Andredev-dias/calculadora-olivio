@@ -1,24 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CALCULADORA</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>CALCULADORA</h1>
-    <br>
-    <label for="n1">Número 01</label>
-    <input type="number" id="n1">
-    <br><br>
-    <label for="n2">Número 02</label>
-    <input type="number" id="n2"> 
-    <br>
-    <button onclick="somar()">SOMAR</button>
-    <br>
-    <p id="resposta"></p>
 
+<body>
+    <h1 class="titulo">Calculadora</h1>
+    <div class="card">
+        <h2>Soma</h2>
+        <label for="n1">Número 01</label>
+        <input type="number" id="n1">
+        <label for="n2">Número 02</label>
+        <input type="number" id="n2">
+        <button onclick="soma()">CALCULAR</button>
+        <p id="respSoma"></p>
+    </div>
+    <div class="card">
+        <h2>Subtração</h2>
+        <label for="n3">Número 01</label>
+        <input type="number" id="n3">
+        <label for="n4">Número 02</label>
+        <input type="number" id="n4">
+        <button onclick="sub()">CALCULAR</button>
+        <p id="respSub"></p>
+    </div>
+    <div class="card">
+        <h2>Multiplicação</h2>
+        <label for="n5">Número 01</label>
+        <input type="number" id="n5">
+        <label for="n6">Número 02</label>
+        <input type="number" id="n6">
+        <button onclick="mult()">CALCULAR</button>
+        <p id="respMult"></p>
+    </div> 
+    <div class="card">
+        <h2>Divisão</h2>
+        <label for="n7">Número 01</label>
+        <input type="number" id="n7">
+        <label for="n8">Número 02</label>
+        <input type="number" id="n8">
+        <button onclick="div()">CALCULAR</button>
+        <p id="respDiv"></p>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
